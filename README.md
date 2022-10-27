@@ -8,6 +8,7 @@ Using a provided data, we are auditing raw voter data covering a Colorado congre
 ## Election-Audit Results:
 
 ![Election Results](https://github.com/LordNebbs/BootcampModule3/blob/main/Resources/Election%20Vote%20count.png)
+
 The precinct had a total vote count of 369,711 votes accross the three counties.
 
 This was determined by isolating and defining the ammount of rows (minus the header) to count the unique vote entries. 
@@ -20,7 +21,7 @@ This was determined by isolating and defining the ammount of rows (minus the hea
 
 We then sorted each vote based on the county that provided it
 
- for county_name in county_votes:
+        for county_name in county_votes:
         # Retrieve the county vote count (new variable).
         cvotes=county_votes.get(county_name)
         # Calculate the percentage of votes for the county.
