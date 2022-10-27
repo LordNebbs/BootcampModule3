@@ -7,7 +7,7 @@ Using a provided data, we are auditing raw voter data covering a Colorado congre
 
 ## Election-Audit Results:
 
-![Election Results](https://github.com/LordNebbs/BootcampModule3/blob/main/Resources/Election%20Vote%20count.png)
+![Election count](https://github.com/LordNebbs/BootcampModule3/blob/main/Resources/Election%20Vote%20count.png)
 
 The precinct had a total vote count of 369,711 votes accross the three counties.
 
@@ -19,7 +19,7 @@ This was determined by isolating and defining the ammount of rows (minus the hea
         total_votes = total_votes + 1
 
 
-We then sorted each vote based on the county that provided it
+We then sorted each vote based on the county that provided it, calculate the percentages and format it so it was easily understood.
 
         for county_name in county_votes:
         # Retrieve the county vote count (new variable).
@@ -58,5 +58,7 @@ Denver, with ~83% of the total made up the majority of the total count. We also 
 
 Using this script we were able to call the election and declare that Diana DeGette, with 73.8% (272,892) of the total vote tally, won the election in a landslide.
 
+![Election Results](https://github.com/LordNebbs/BootcampModule3/blob/main/Resources/Election%20results.png)
 
-Election-Audit Summary: In a summary statement, provide a business proposal to the election commission on how this script can be used—with some modifications—for any election. Give at least two examples of how this script can be modified to be used for other elections.
+## Election-Audit Summary:
+ This script provided a concise summary of the Colorado congressional election. However it would not take much to modify this program to handle other types of election or polling. For example (dataset/csv provided), you could exchange all the variables related to the candidates for Ballot Propositions. You could also expand this to run statewide senate races by expanding the lists and dictionaries to include every county, not just those in this particular election. Or further extrapolating to national races provided the county and state parameters were added to the dictionaries.
